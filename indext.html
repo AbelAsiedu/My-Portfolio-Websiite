@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abel Asiedu — Portfolio</title>
+  <meta name="description" content="Abel Asiedu — Frontend engineer & web designer. React, JavaScript, PHP (Laravel) and UI craftsperson." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Particle Background -->
+  <div id="particles-js" aria-hidden="true"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header id="siteHeader">
+    <div class="container nav">
+      <div class="left">
+        <div class="logo" aria-hidden="true">AA</div>
+        <div>
+          <strong>Abel Asiedu</strong><br>
+          <span class="kicker" style="font-size:.78rem">Frontend Engineer</span>
+        </div>
+      </div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div style="display:flex;gap:.5rem">
+        <a class="btn small ghost glow-hover" href="#projects" aria-label="Skip to projects">View Work</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle light/dark">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero fade-section" id="home">
+    <div class="container grid hero-grid">
+      <div class="title">
+        <span class="pill" aria-label="Role">React • JavaScript • PHP (Laravel)</span>
+
+        <!-- Typed intro -->
+        <h1 class="hero-text" style="font-size:clamp(1.6rem,2.4vw,2.2rem)">
+          <span id="typed-name"></span>
+        </h1>
+        <p class="lead" style="margin-top:-.4rem">
+          <span id="typed-role" class="kicker" style="letter-spacing:.06em"></span>
+        </p>
+
+        <!-- Main hero copy -->
+        <h1>Building fast, delightful web apps that feel at home on any screen.</h1>
+        <p class="lead">I’m a frontend engineer from Ghana crafting clean, accessible interfaces and resilient web systems. I love turning complex ideas into simple, beautiful products.</p>
+        <div style="display:flex;gap:.7rem;flex-wrap:wrap">
+          <a class="btn glow-hover" href="#contact">Hire me</a>
+          <a class="btn ghost glow-hover" href="#projects">Browse projects</a>
+          <a class="chip" href="resume.pdf" download>⬇ Resume</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <h3><span class="count" data-target="35">0</span>+ projects</h3>
+            <p class="muted">Web apps, dashboards & websites</p>
+          </div>
+          <div class="stat">
+            <h3><span class="count" data-target="5">0</span> years</h3>
+            <p class="muted">Designing & building for the web</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="center">
+        <img class="avatar floating" src="him.jpg" alt="Portrait of Abel Asiedu"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section fade-section">
+    <div class="container grid about">
+      <article class="card">
+        <h2>About me</h2>
+        <p class="lead" style="margin-top:.6rem">I design and develop modern web applications with a focus on performance, accessibility, and delightful UX. I’m fluent in React, vanilla JS/TS, and PHP (Laravel) and I love shipping features that users notice.</p>
+        <ul style="margin-top:1rem;line-height:1.9;color:var(--muted)">
+          <li>🏗️ Frontend architecture, design systems & reusable components</li>
+          <li>⚡ Core Web Vitals performance tuning</li>
+          <li>🧪 Testing mindset, Git workflow, CI-friendly</li>
+          <li>🌍 Remote-ready, clear communicator</li>
+        </ul>
+      </article>
+      <aside class="card">
+        <h2>Highlights</h2>
+        <div style="display:grid;gap:.7rem;margin-top:.6rem;color:var(--muted)">
+          <div>✅ Built a real-time chat app with React & Appwrite.</div>
+          <div>✅ Led a responsive redesign that improved conversions by 28%.</div>
+          <div>✅ Delivered dashboards used by 2k+ monthly users.</div>
+        </div>
+        <div style="margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap">
+          <span class="chip">React</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">Laravel</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">Tailwind/CSS</span>
+          <span class="chip">Accessibility</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section fade-section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="grid skills" style="margin-top:1rem">
+        <div class="card skill"><h3>React</h3><div class="bar" aria-hidden="true"><span style="width:90%"></span></div></div>
+        <div class="card skill"><h3>JavaScript/TypeScript</h3><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="card skill"><h3>HTML & CSS</h3><div class="bar"><span style="width:95%"></span></div></div>
+        <div class="card skill"><h3>PHP (Laravel)</h3><div class="bar"><span style="width:75%"></span></div></div>
+        <div class="card skill"><h3>MySQL</h3><div class="bar"><span style="width:72%"></span></div></div>
+        <div class="card skill"><h3>UI/UX & A11y</h3><div class="bar"><span style="width:85%"></span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section fade-section">
+    <div class="container">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+        <h2>Projects</h2>
+        <div class="filters" role="tablist" aria-label="Project filters">
+          <button class="chip filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="chip filter" data-filter="react" role="tab" aria-selected="false">React</button>
+          <button class="chip filter" data-filter="php" role="tab" aria-selected="false">PHP/Laravel</button>
+          <button class="chip filter" data-filter="vanilla" role="tab" aria-selected="false">Vanilla JS</button>
+        </div>
+      </div>
+      <div class="grid projects" id="projectGrid">
+        <!-- Project Card 1 -->
+        <article class="card project" data-category="react">
+          <img class="thumb" src="https://images.unsplash.com/photo-1551292831-023188e78222?auto=format&fit=crop&w=1200&q=60" alt="Analytics dashboard screenshot placeholder">
+          <div class="body">
+            <h3>Real-time Analytics Dashboard</h3>
+            <p class="muted">React + Recharts dashboard with live sockets, role-based views, and dark mode.</p>
+            <div class="tags"><span class="chip">React</span><span class="chip">WebSockets</span><span class="chip">Recharts</span></div>
+            <div style="margin-top:.8rem;display:flex;gap:.5rem;flex-wrap:wrap">
+              <a class="btn small glow-hover" href="#">Live</a>
+              <a class="btn small ghost glow-hover" href="#">Code</a>
+            </div>
+          </div>
+        </article>
+        <!-- Project Card 2 -->
+        <article class="card project" data-category="php">
+          <img class="thumb" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=60" alt="Laravel app UI placeholder">
+          <div class="body">
+            <h3>Car Rental Portal</h3>
+            <p class="muted">Laravel app with bookings, admin dashboard, testimonial management, and payments.</p>
+            <div class="tags"><span class="chip">Laravel</span><span class="chip">MySQL</span><span class="chip">Blade</span></div>
+            <div style="margin-top:.8rem;display:flex;gap:.5rem;flex-wrap:wrap">
+              <a class="btn small glow-hover" href="#">Live</a>
+              <a class="btn small ghost glow-hover" href="#">Code</a>
+            </div>
+          </div>
+        </article>
+        <!-- Project Card 3 -->
+        <article class="card project" data-category="react">
+          <img class="thumb" src="https://images.unsplash.com/photo-1523473827532-6e57306a0b19?auto=format&fit=crop&w=1200&q=60" alt="Chat app interface placeholder">
+          <div class="body">
+            <h3>Realtime Chat App</h3>
+            <p class="muted">React + Appwrite chat with presence, attachments, and optimistic updates.</p>
+            <div class="tags"><span class="chip">React</span><span class="chip">Appwrite</span><span class="chip">Vite</span></div>
+            <div style="margin-top:.8rem;display:flex;gap:.5rem;flex-wrap:wrap">
+              <a class="btn small glow-hover" href="#">Live</a>
+              <a class="btn small ghost glow-hover" href="#">Code</a>
+            </div>
+          </div>
+        </article>
+        <!-- Project Card 4 -->
+        <article class="card project" data-category="vanilla">
+          <img class="thumb" src="https://images.unsplash.com/photo-1521939094609-93aba1af40d6?auto=format&fit=crop&w=1200&q=60" alt="Landing page mockup placeholder">
+          <div class="body">
+            <h3>Accessible Landing Page</h3>
+            <p class="muted">Semantic HTML, progressive enhancement, and Lighthouse 100/100/100/100.</p>
+            <div class="tags"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JS</span></div>
+            <div style="margin-top:.8rem;display:flex;gap:.5rem;flex-wrap:wrap">
+              <a class="btn small glow-hover" href="#">Live</a>
+              <a class="btn small ghost glow-hover" href="#">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section fade-section">
+    <div class="container grid" style="grid-template-columns:1fr 1fr;gap:2rem">
+      <div>
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="step card" style="padding:1rem">
+            <span class="dot" aria-hidden="true"></span>
+            <h3>Frontend Engineer — Seed-stage Startup</h3>
+            <p class="muted">2024 — Present · Remote</p>
+            <p>Built end-to-end UI flows for a real estate application: listings, search, payments and analytics.</p>
+          </div>
+          <div class="step card" style="padding:1rem">
+            <span class="dot" aria-hidden="true"></span>
+            <h3>Web Designer — Dambry</h3>
+            <p class="muted">2022 — 2024 · Accra, GH</p>
+            <p>Delivered responsive sites and internal dashboards, improving team velocity and UX consistency.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="step card" style="padding:1rem">
+            <span class="dot" aria-hidden="true"></span>
+            <h3>Frontend Engineering Nanodegree</h3>
+            <p class="muted">ALX · 2024 — 2025</p>
+          </div>
+          <div class="step card" style="padding:1rem">
+            <span class="dot" aria-hidden="true"></span>
+            <h3>Diploma in IT</h3>
+            <p class="muted">Pentecost University</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section fade-section">
+    <div class="container grid" style="grid-template-columns:1.1fr .9fr;align-items:start">
+      <div>
+        <h2>Let’s build something great</h2>
+        <p class="lead">Tell me about your project, timeline, and goals. I’ll reply with next steps and a kickoff plan.</p>
+
+        <!-- Form kept translucent (opacity look) and aligned -->
+        <form id="contactForm" class="card form-card contact-form" aria-label="Contact form">
+          <label>
+            <span class="muted">Your name</span>
+            <input type="text" name="name" required placeholder="e.g., Ama Mensah" />
+          </label>
+          <label>
+            <span class="muted">Email</span>
+            <input type="email" name="email" required placeholder="you@example.com" />
+          </label>
+          <label class="full">
+            <span class="muted">What are we building?</span>
+            <textarea name="message" required placeholder="A responsive web app for…"></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn glow-hover" type="submit">Send message</button>
+            <span id="formStatus" role="status" aria-live="polite" class="muted"></span>
+          </div>
+        </form>
+      </div>
+
+      <aside class="card" style="padding:1rem">
+        <h3>Contact details</h3>
+        <div style="display:grid;gap:.4rem;margin-top:.6rem;color:var(--muted)">
+          <div>📍 Accra, Ghana</div>
+          <div>📧 <a href="mailto:abelasiedu@gmail.com">abelasiedu@gmail.com</a></div>
+          <div>🔗 <a href="https://linkedin.com/in/abel-asiedu" target="_blank" rel="noreferrer noopener">LinkedIn</a> · <a href="https://twitter.com/AbelAsiedu" target="_blank" rel="noreferrer noopener">Twitter</a> · <a href="https://github.com/AbelAsiedu" target="_blank" rel="noreferrer noopener">GitHub</a></div>
+        </div>
+        <h3 style="margin-top:1rem">Services</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem">
+          <span class="chip">Web Apps</span>
+          <span class="chip">Landing Pages</span>
+          <span class="chip">Dashboards</span>
+          <span class="chip">UI/UX</span>
+          <span class="chip">Consulting</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+      <div>© <span id="year"></span> Abel Asiedu. All rights reserved.</div>
+      <div class="socials">
+        <a href="#" class="chip glow-hover">Twitter</a>
+        <a href="#" class="chip glow-hover">LinkedIn</a>
+        <a href="#" class="chip glow-hover">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== LIBS ===== -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <!-- ===== APP ===== -->
+  <script src="script.js"></script>
+</body>
+</html>
