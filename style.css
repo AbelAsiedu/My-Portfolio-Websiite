@@ -98,25 +98,76 @@ header.scrolled{box-shadow:0 6px 20px rgba(0,0,0,.25)}
 .step{position:relative;padding-left:2.5rem;margin:1.1rem 0}
 .dot{position:absolute;left:6px;top:.25rem;width:12px;height:12px;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--brand-2))}
 
-/* ===== CONTACT ===== */
-.contact-form{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.contact-form label{display:flex;flex-direction:column;gap:.4rem}
-.contact-form .full{grid-column:1 / -1}
-.contact-form input,.contact-form textarea{
-  background:#222;border:1px solid color-mix(in oklab,var(--text),transparent 80%);border-radius:12px;padding:.8rem .9rem;color:var(--text)
+/* Contact Form Styling */
+.contact-form {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #1c1c1c;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  text-align: left;
+ 
 }
-.contact-form input:focus,.contact-form textarea:focus{outline:var(--ring);background:#2a2a2a}
-.contact-form textarea{min-height:130px}
-.form-actions{grid-column:1 / -1;display:flex;gap:.6rem;align-items:center}
-.form-card{ /* translucent/opacity look kept */
-  background:rgba(17,17,17,.5); /* keeps the visual opacity without dimming children */
-  border:1px solid color-mix(in oklab,var(--text),transparent 85%);
-  backdrop-filter:blur(8px) saturate(120%);
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color:#0ea5e9;
 }
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #ddd;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #2a2a2a;
+  color: #fff;
+  transition: border 0.3s ease, background 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 2px solid #0ea5e9;
+  background: #333;
+}
+
+.contact-form .btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #0ea5e9;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form .btn:hover {
+  background: #034564;
+  transform: translateY(-2px);
+}
+
 
 /* ===== FOOTER ===== */
 footer{padding:2rem 0;border-top:1px solid color-mix(in oklab,var(--text),transparent 90%);color:var(--muted);background:#000}
-footer .socials a{color:#ff9800;text-decoration:none;margin-left:.5rem}
+footer .socials a{color:#0ea5e9;text-decoration:none;margin-left:.5rem}
 footer .socials a:hover{color:#fff}
 
 /* ===== RESPONSIVE ===== */
