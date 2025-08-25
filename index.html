@@ -244,43 +244,24 @@
         <h2>Let’s build something great</h2>
         <p class="lead">Tell me about your project, timeline, and goals. I’ll reply with next steps and a kickoff plan.</p>
 
-        <!-- Form kept translucent (opacity look) and aligned -->
-        <form id="contactForm" class="card form-card contact-form" aria-label="Contact form">
-          <label>
-            <span class="muted">Your name</span>
-            <input type="text" name="name" required placeholder="e.g., Ama Mensah" />
-          </label>
-          <label>
-            <span class="muted">Email</span>
-            <input type="email" name="email" required placeholder="you@example.com" />
-          </label>
-          <label class="full">
-            <span class="muted">What are we building?</span>
-            <textarea name="message" required placeholder="A responsive web app for…"></textarea>
-          </label>
-          <div class="form-actions">
-            <button class="btn glow-hover" type="submit">Send message</button>
-            <span id="formStatus" role="status" aria-live="polite" class="muted"></span>
-          </div>
-        </form>
-      </div>
+       <!-- Contact Form -->
+<form action="https://formspree.io/f/mvgbopno" method="POST" class="contact-form">
+  <h2>Contact Me</h2>
+  
+  <div class="form-group">
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  </div>
 
-      <aside class="card" style="padding:1rem">
-        <h3>Contact details</h3>
-        <div style="display:grid;gap:.4rem;margin-top:.6rem;color:var(--muted)">
-          <div>📍 Accra, Ghana</div>
-          <div>📧 <a href="mailto:abelasiedu@gmail.com">abelasiedu@gmail.com</a></div>
-          <div>🔗 <a href="https://linkedin.com/in/abel-asiedu" target="_blank" rel="noreferrer noopener">LinkedIn</a> · <a href="https://twitter.com/AbelAsiedu" target="_blank" rel="noreferrer noopener">Twitter</a> · <a href="https://github.com/AbelAsiedu" target="_blank" rel="noreferrer noopener">GitHub</a></div>
-        </div>
-        <h3 style="margin-top:1rem">Services</h3>
-        <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem">
-          <span class="chip">Web Apps</span>
-          <span class="chip">Landing Pages</span>
-          <span class="chip">Dashboards</span>
-          <span class="chip">UI/UX</span>
-          <span class="chip">Consulting</span>
-        </div>
-      </aside>
+  <div class="form-group">
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+  </div>
+
+  <button type="submit" class="btn">Send Message</button>
+</form>
+
+           </aside>
     </div>
   </section>
 
@@ -288,6 +269,7 @@
   <footer>
     <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
       <div>© <span id="year"></span> Abel Asiedu. All rights reserved.</div>
+      <div>📍 Accra, Ghana</div>
       <div class="socials">
         <a href="#" class="chip glow-hover">Twitter</a>
         <a href="#" class="chip glow-hover">LinkedIn</a>
