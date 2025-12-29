@@ -95,6 +95,7 @@ header.scrolled{box-shadow:0 6px 20px rgba(0,0,0,.25)}
 /* Stack badges row */
 .stack{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem}
 .badge{display:inline-flex;align-items:center;gap:.35rem;padding:.35rem .6rem;border:1px solid color-mix(in oklab,var(--text),transparent 80%);border-radius:999px;font-size:.85rem;color:var(--muted);background:color-mix(in oklab,var(--bg-elev),transparent 0%)}
+.badge svg{width:16px;height:16px;display:inline-block}
 
 /* ===== EXPERIENCE / EDUCATION ===== */
 .timeline{position:relative}
