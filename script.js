@@ -72,9 +72,12 @@
       filterButtons.forEach(btn => btn.addEventListener('click', () => {
         filterButtons.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
         btn.classList.add('active'); btn.setAttribute('aria-selected', 'true');
-        const cat = btn.dataset.filter;
+        const cat = (btn.dataset.filter || '').toLowerCase();
         [...grid.children].forEach(card => {
-          const show = cat === 'all' || card.dataset.category === cat;
+          const byCategory = (card.dataset.category || '').toLowerCase() === cat;
+          const tags = (card.dataset.tags || '').toLowerCase().split(',').map(s => s.trim());
+          const byTag = tags.includes(cat);
+          const show = cat === 'all' || byCategory || byTag;
           card.style.display = show ? 'flex' : 'none';
         });
       }));

@@ -92,6 +92,9 @@ header.scrolled{box-shadow:0 6px 20px rgba(0,0,0,.25)}
 .project-iframe{width:100%;height:200px;border:none;aspect-ratio:16/10;background:#1f2937;border-radius:12px 12px 0 0}
 .project .body{padding:1rem}
 .project .tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem}
+/* Stack badges row */
+.stack{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem}
+.badge{display:inline-flex;align-items:center;gap:.35rem;padding:.35rem .6rem;border:1px solid color-mix(in oklab,var(--text),transparent 80%);border-radius:999px;font-size:.85rem;color:var(--muted);background:color-mix(in oklab,var(--bg-elev),transparent 0%)}
 
 /* ===== EXPERIENCE / EDUCATION ===== */
 .timeline{position:relative}
