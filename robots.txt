@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /assets/private/
 
-Sitemap: https://www.abelasiedu.com/sitemap.xml
+Sitemap: https://AbelAsiedu.github.io/My-Portfolio-Websiite/sitemap.xml
