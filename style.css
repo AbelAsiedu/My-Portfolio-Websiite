@@ -204,3 +204,66 @@ footer .socials a:hover{color:#fff}
 
 /* Typed cursor color */
 .typed-cursor{color:var(--brand-2)}
+
+/* ===== NEW INTERACTIVE ANIMATIONS ===== */
+/* Tilt effect on hover */
+.project{transition:all .3s cubic-bezier(.4,0,.2,1)}
+.project:hover{transform:translateY(-8px) scale(1.02);box-shadow:0 20px 50px rgba(2,8,23,.6)}
+.card{transition:all .3s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 20px 50px rgba(2,8,23,.6)}
+
+/* Skill bars animate on view */
+.bar > span{animation:fillBar 1.5s ease-out forwards;transform-origin:left}
+@keyframes fillBar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+/* Stat pulse animation */
+.stat{position:relative;overflow:hidden}
+.stat::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:linear-gradient(45deg,transparent,rgba(14,165,233,.1),transparent);transform:rotate(45deg);animation:shimmer 3s infinite}
+@keyframes shimmer{0%,100%{transform:translateX(-100%) translateY(-100%) rotate(45deg)}50%{transform:translateX(100%) translateY(100%) rotate(45deg)}}
+
+/* Smooth color transitions */
+.chip{transition:all .2s ease}
+.chip:hover{background:color-mix(in oklab,var(--brand),transparent 20%);border-color:var(--brand);color:#fff;transform:scale(1.05)}
+
+/* Logo spin on hover */
+.logo{transition:transform .3s ease;cursor:pointer}
+.logo:hover{animation:spin .6s ease}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+
+/* Project iframe hover zoom */
+.project-iframe{transition:transform .3s ease;overflow:hidden}
+.project:hover .project-iframe{transform:scale(1.05)}
+
+/* Button ripple effect */
+.btn{position:relative;overflow:hidden}
+.btn::after{content:'';position:absolute;top:50%;left:50%;width:0;height:0;border-radius:50%;background:rgba(255,255,255,.3);transform:translate(-50%,-50%);transition:width .4s,height .4s}
+.btn:active::after{width:300px;height:300px}
+
+/* Timeline dots pulse */
+.dot{animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(14,165,233,.7)}50%{box-shadow:0 0 0 10px rgba(14,165,233,0)}}
+
+/* Tags slide in on hover */
+.project .tags .chip{opacity:.8;transform:translateY(5px);transition:all .2s ease}
+.project:hover .tags .chip{opacity:1;transform:translateY(0)}
+.project .tags .chip:nth-child(1){transition-delay:.05s}
+.project .tags .chip:nth-child(2){transition-delay:.1s}
+.project .tags .chip:nth-child(3){transition-delay:.15s}
+
+/* Avatar border glow */
+.avatar{transition:all .3s ease;border:3px solid color-mix(in oklab,var(--brand),transparent 50%)}
+.avatar:hover{border-color:var(--brand);box-shadow:0 0 30px rgba(14,165,233,.6);transform:scale(1.05) rotate(2deg)}
+
+/* Social links bounce */
+.socials a{display:inline-block;transition:transform .2s ease}
+.socials a:hover{transform:translateY(-3px) scale(1.1)}
+@keyframes bounce{0%,100%{transform:translateY(-3px)}50%{transform:translateY(-8px)}}
+
+/* Form inputs focus glow */
+.contact-form input:focus,
+.contact-form textarea:focus{box-shadow:0 0 0 3px rgba(14,165,233,.3);transform:scale(1.01)}
+
+/* Nav links underline effect */
+.nav ul a{position:relative}
+.nav ul a::after{content:'';position:absolute;bottom:0;left:50%;width:0;height:2px;background:var(--brand);transform:translateX(-50%);transition:width .3s ease}
+.nav ul a:hover::after,.nav ul a.active::after{width:80%}
