@@ -174,11 +174,20 @@
         <h2>Projects</h2>
         <div class="filters" role="tablist" aria-label="Project filters">
           <button class="chip filter active" data-filter="all" role="tab" aria-selected="true">All</button>
-          <button class="chip filter" data-filter="react" role="tab" aria-selected="false">React</button>
+          <button class="chip filter" data-filter="react" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#61dafb"/><circle cx="12" cy="12" r="3" fill="#0b1020"/></svg>
+            React
+          </button>
           <button class="chip filter" data-filter="php" role="tab" aria-selected="false">PHP/Laravel</button>
           <button class="chip filter" data-filter="vanilla" role="tab" aria-selected="false">Vanilla JS</button>
-          <button class="chip filter" data-filter="nextjs" role="tab" aria-selected="false">Next.js</button>
-          <button class="chip filter" data-filter="tailwind" role="tab" aria-selected="false">Tailwind</button>
+          <button class="chip filter" data-filter="nextjs" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l10 10-10 10L2 12 12 2z" fill="#000"/></svg>
+            Next.js
+          </button>
+          <button class="chip filter" data-filter="tailwind" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12c2-6 8-6 10-2 2 4 6 4 6 0-2 6-8 6-10 2-2-4-6-4-6 0z" fill="#06b6d4"/></svg>
+            Tailwind
+          </button>
         </div>
       </div>
       <div class="grid projects" id="projectGrid">
@@ -189,7 +198,17 @@
             <h3>Modern Pedagogues — Tutoring Marketplace</h3>
             <p class="muted">Home tutoring and learning marketplace that helps families discover tutors, explore curriculum and resources, and purchase educational products with secure checkout. Offers user accounts and dashboards, a responsive mobile‑friendly experience, and downloadable materials where applicable. An admin panel streamlines orders, products and applications, and a 24/7 AI chat assistant answers visitor questions instantly.</p>
             <div class="tags"><span class="chip">Marketplace</span><span class="chip">Secure Checkout</span><span class="chip">Accounts</span><span class="chip">Dashboards</span><span class="chip">Admin</span><span class="chip">AI Chat</span></div>
-            <div class="stack"><span class="badge">☁ Heroku</span><span class="badge">🛍️ Checkout</span><span class="badge">👤 Accounts</span><span class="badge">📊 Dashboards</span><span class="badge">🛠 Admin Panel</span><span class="badge">🤖 AI Assistant</span></div>
+            <div class="stack">
+              <span class="badge">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" fill="#79589f"/><path d="M8 6h2v12H8zm6 3h2v9h-2z" fill="#fff"/></svg>
+                Heroku
+              </span>
+              <span class="badge">🛍️ Checkout</span>
+              <span class="badge">👤 Accounts</span>
+              <span class="badge">📊 Dashboards</span>
+              <span class="badge">🛠 Admin Panel</span>
+              <span class="badge">🤖 AI Assistant</span>
+            </div>
             <div style="margin-top:.8rem;display:flex;gap:.5rem;flex-wrap:wrap">
               <a class="btn small glow-hover" href="https://modernpedagogues-2d8e4f4bb9bf.herokuapp.com" target="_blank" rel="noopener noreferrer">Live</a>
             </div>
@@ -256,6 +275,23 @@
             </div>
           </div>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STACK LEGEND ===== -->
+  <section class="section fade-section" aria-labelledby="stack-legend-title">
+    <div class="container">
+      <h2 id="stack-legend-title">Stack Legend</h2>
+      <div class="card" style="margin-top:1rem">
+        <div class="stack" style="gap:.6rem">
+          <span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#61dafb"/><circle cx="12" cy="12" r="3" fill="#0b1020"/></svg> React</span>
+          <span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l10 10-10 10L2 12 12 2z" fill="#000"/></svg> Next.js</span>
+          <span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l9 9-9 11L3 11 12 2z" fill="#000"/></svg> Vercel</span>
+          <span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 7-7 13L5 9l7-7z" fill="#25c2a0"/></svg> Netlify</span>
+          <span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" fill="#79589f"/><path d="M8 6h2v12H8zm6 3h2v9h-2z" fill="#fff"/></svg> Heroku</span>
+          <span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12c2-6 8-6 10-2 2 4 6 4 6 0-2 6-8 6-10 2-2-4-6-4-6 0z" fill="#06b6d4"/></svg> Tailwind CSS</span>
+        </div>
       </div>
     </div>
   </section>

@@ -43,6 +43,7 @@ input,button,textarea,select{font:inherit}
 .btn.ghost{background:transparent;border-color:color-mix(in oklab,var(--text),transparent 70%);color:var(--text);box-shadow:none}
 .btn.small{padding:.6rem .8rem;border-radius:10px;font-weight:600}
 .chip{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem .7rem;border:1px solid color-mix(in oklab,var(--text),transparent 70%);border-radius:999px;color:var(--muted);text-decoration:none}
+.chip svg{width:14px;height:14px;display:inline-block}
 .card{background:color-mix(in oklab,var(--bg-elev),transparent 0%);backdrop-filter:var(--card-blur);border:1px solid color-mix(in oklab,var(--text),transparent 85%);border-radius:var(--radius);box-shadow:var(--shadow);padding:1rem}
 .section{padding:4.5rem 0}
 .kicker{color:var(--brand-2);font-weight:700;letter-spacing:.08em;text-transform:uppercase}
